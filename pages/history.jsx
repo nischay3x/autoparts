@@ -235,7 +235,7 @@ export default function History() {
               <p className="fs-small">
                 Id: {toEdit._id}
                 <br />
-                Date: {new Date(toEdit.updatedAt).toLocaleDateString()}
+                Date: {new Date(toEdit.updatedAt).toDateString()}
               </p>
               {toEdit.type === "CREDIT" && !toEdit.paid && (
                 <button
